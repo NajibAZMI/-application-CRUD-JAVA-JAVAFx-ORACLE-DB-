@@ -1,14 +1,24 @@
 package com.example.crud_in_java;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
-
+    private TextField usernameField;;
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private PasswordField passwordField;
+    @FXML
+    private void handleLogin() {
+
+        String username = usernameField.getText();
+        String password = passwordField.getText();
+
+
+        System.out.println("Username: " + username);
+        System.out.println("Password: " + password);
+
+
     }
 }
