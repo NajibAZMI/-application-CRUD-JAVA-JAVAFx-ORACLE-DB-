@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea layoutX="68.0" layoutY="117.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" />
+            <TextField layoutX="100.0" layoutY="175.0" promptText="User Name" style="-fx-background-color: transparant; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField layoutX="100.0" layoutY="236.0" promptText="Password" style="-fx-background-color: transparant; -fx-border-color: #1EB8FF#0598ff; -fx-border-width: 0 0 2px 0;" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
