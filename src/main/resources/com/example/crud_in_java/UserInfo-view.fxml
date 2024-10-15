@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crud_in_java.UserInfoController">
+    <Label fx:id="usernameLabel" text="Nom d'utilisateur : " />
+
+    <Label style="-fx-font-size: 16px;" text="Informations Utilisateur" />
+    <Label fx:id="emailLabel" text="Email : " />
+</VBox>

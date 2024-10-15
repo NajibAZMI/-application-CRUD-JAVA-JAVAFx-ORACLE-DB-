@@ -9,6 +9,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javafx.scene.control.Alert;
 import java.sql.SQLException;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 public class HelloController {
     @FXML
@@ -45,6 +49,15 @@ public class HelloController {
                 // Vérification des résultats
                 if (resultSet.next()) {
                     showAlert("Bienvenue!", "Connexion réussie !");
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("UserInfo-view.fxml"));
+                    Parent root = loader.load();
+
+                    UserInfoController userInfoController = loader.getController();
+                    userInfoController.setUserInfo(username, resultSet.getString("EMAIL"));
+
+                    Stage stage = (Stage) usernameField.getScene().getWindow();
+                    stage.setScene(new Scene(root));
+                    stage.setTitle("User Info");
                 } else {
                     showAlert("Erreur", "Nom d'utilisateur ou mot de passe incorrect.");
                 }
